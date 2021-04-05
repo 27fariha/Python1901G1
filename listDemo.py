@@ -1,4 +1,4 @@
-mylist=["Aqib","Atif","Aneeq","Imad","Aliyan","Aliyan"]
+mylist=["Aqib","Atif","Aneeq","Imad","Aliyan","Aliyan",20,1.65]
 print(mylist)
 print(len(mylist))
 print(type(mylist))
