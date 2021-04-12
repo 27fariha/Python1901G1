@@ -65,3 +65,9 @@ print(s1)
 
 s5=s1.symmetric_difference(s2)
 print(s5)
+
+
+#duplication
+
+ab={"a","b","a"}
+print(ab)
