@@ -1,6 +1,7 @@
 class myclass:
     x=5
     print(x)
+    z=10
 
 myclass
 
@@ -13,7 +14,7 @@ print(obj.a)
 
 
 #__init__
-
+#work constructor
 class abc:
     def __init__(self,name,age):
         self.name=name
@@ -37,7 +38,7 @@ class abcd:
 p2=abcd("mnbg",20)
 p2.getData()
 
-#getdata function
+#getdata function with replace self keyword
 class abcd1:
     def __init__(ab,name,age):
         ab.name=name
@@ -49,3 +50,51 @@ class abcd1:
 
 p21=abcd1("mnbg",20)
 p21.getData()
+
+#update value 
+class abc1:
+    def __init__(self,name,age):
+        self.fullname=name
+        self.Age=age
+
+p5=abc1("xyz",20)
+p5.Age=50
+print(p5.fullname)
+print(p5.Age)
+
+#Delete value 
+class abc2:
+    def __init__(self,name,age):
+        self.fullname=name
+        self.Age=age
+
+p5=abc2("xyz",20)
+del p5.Age
+#del p5
+print(p5.fullname)
+#print(p5.Age)
+
+#pass keyword
+class myclass5:
+  '''This is one text'''
+  pass
+print(myclass5.__doc__)
+
+
+# instance , class and static me
+class example:
+    def method(self):
+        return "Instance method called ",self
+    @classmethod
+    def classmethod(cls):
+        return "Class Method called",cls
+    @staticmethod
+    def staticmethod():
+        return "Static method called"
+
+obj =example()
+print(obj.method())
+
+print(obj.classmethod())
+
+print(obj.staticmethod())
